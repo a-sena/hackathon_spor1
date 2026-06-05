@@ -22,6 +22,16 @@ public final class Prioritet {
 
     public static Prioritetskode prioritet(int alder, int manedslonn) {
         // TODO
-        throw new UnsupportedOperationException("Oppgave 14 — ikke implementert ennå");
+        if (alder >= 67) {
+            return Prioritetskode.A;
+        }
+
+
+        if (manedslonn < 30000) {
+            return Prioritetskode.B;
+        }
+
+        return Prioritetskode.C;
     }
-}
+           }
+
