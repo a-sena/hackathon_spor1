@@ -22,6 +22,15 @@ public final class Epost {
 
     public static boolean erGyldig(String epost) {
         // TODO
-        throw new UnsupportedOperationException("Oppgave 10 — ikke implementert ennå");
-    }
+
+        int posisjon= epost.indexOf('@');
+
+if (posisjon <= 0){
+    return false;
+
+        }
+else if(epost.indexOf('@', posisjon + 1) != -1){
+    return false;
+        }
+        return true;    }
 }

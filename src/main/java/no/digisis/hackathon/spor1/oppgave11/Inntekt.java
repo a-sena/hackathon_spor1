@@ -20,6 +20,16 @@ public final class Inntekt {
 
     public static Inntektskategori kategoriFor(int manedslonn) {
         // TODO
+
+        if (manedslonn< 30000){
+            return Inntektskategori.LAV;
+        }
+        else if (manedslonn>= 30000 && manedslonn<= 60000){
+            return Inntektskategori.MIDDELS;
+        }
+        else if (manedslonn > 60000){
+            return Inntektskategori.HOY;
+        }
         throw new UnsupportedOperationException("Oppgave 11 — ikke implementert ennå");
     }
 }

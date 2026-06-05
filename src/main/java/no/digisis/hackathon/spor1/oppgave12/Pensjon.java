@@ -13,10 +13,16 @@ package no.digisis.hackathon.spor1.oppgave12;
  */
 public final class Pensjon {
 
-    private Pensjon() {}
+    private Pensjon() {
+    }
 
     public static Pensjonsstatus statusFor(int alder) {
         // TODO
-        throw new UnsupportedOperationException("Oppgave 12 — ikke implementert ennå");
-    }
+        if (alder >= 67) {
+            return Pensjonsstatus.PENSJONIST;
+        }
+
+            return Pensjonsstatus.YRKESAKTIV;
+        }
+
 }

@@ -17,6 +17,12 @@ public final class Inntektsgrense {
 
     public static boolean innenfor(int belop, int nedre, int ovre) {
         // TODO
-        throw new UnsupportedOperationException("Oppgave 9 — ikke implementert ennå");
+      if (belop>=nedre && belop <=ovre){
+          return true;
+      }
+
+       else {
+           return  false;
+      }
     }
 }
