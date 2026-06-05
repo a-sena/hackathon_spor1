@@ -11,6 +11,7 @@ public final class Hilsen {
 
     public static String hils(String navn) {
         // TODO
-        throw new UnsupportedOperationException("Oppgave 1 — ikke implementert ennå");
+        return "Hei, "+ navn + "! Søknaden din er mottatt.";
+
     }
 }

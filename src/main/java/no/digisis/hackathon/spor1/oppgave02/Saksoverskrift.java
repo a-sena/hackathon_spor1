@@ -15,6 +15,6 @@ public final class Saksoverskrift {
 
     public static String formater(String saksnavn, String soekernavn) {
         // TODO
-        throw new UnsupportedOperationException("Oppgave 2 — ikke implementert ennå");
-    }
+        return saksnavn + " — søknad fra " + soekernavn;
+         }
 }
