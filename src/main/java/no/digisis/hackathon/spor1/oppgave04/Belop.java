@@ -20,6 +20,25 @@ public final class Belop {
 
     public static String formaterBelop(int kroner) {
         // TODO
-        throw new UnsupportedOperationException("Oppgave 4 — ikke implementert ennå");
+        //
+        String talltoString = String.valueOf(kroner);
+
+        StringBuilder sb = new StringBuilder();
+        int teller = 0;
+
+
+        for (int i = talltoString.length() - 1; i >= 0; i--) {
+
+
+            if (teller > 0 && teller % 3 == 0) {
+                sb.append(" ");
+            }
+
+            sb.append(talltoString.charAt(i));
+            teller++;
+        }
+
+
+        return sb.reverse().toString() + " kr";
     }
-}
+    }

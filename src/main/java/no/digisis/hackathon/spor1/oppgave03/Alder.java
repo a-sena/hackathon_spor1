@@ -11,6 +11,7 @@ public final class Alder {
 
     public static int alderIAr(int fodselsAar, int referanseAar) {
         // TODO
-        throw new UnsupportedOperationException("Oppgave 3 — ikke implementert ennå");
-    }
+        int alder = referanseAar - fodselsAar;
+        return alder;
+           }
 }

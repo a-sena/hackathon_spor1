@@ -17,6 +17,9 @@ public final class Saksnummer {
 
     public static String lagSaksnummer(int nr) {
         // TODO
-        throw new UnsupportedOperationException("Oppgave 5 — ikke implementert ennå");
-    }
-}
+
+        String formatliSayi = String.format("%04d", nr);
+        return "SAK-" + formatliSayi;
+
+
+    }}
