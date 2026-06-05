@@ -21,6 +21,18 @@ public final class Saksbehandlingsfrist {
 
     public static int dagerFor(Inntektskategori kategori) {
         // TODO
+        if (kategori==Inntektskategori.HOY){
+            return 30;
+
+        }
+        else if (kategori==Inntektskategori.LAV){
+            return 14;
+
+        }
+        else if (kategori==Inntektskategori.MIDDELS){
+            return 21;
+
+        }
         throw new UnsupportedOperationException("Oppgave 13 — ikke implementert ennå");
     }
 }
