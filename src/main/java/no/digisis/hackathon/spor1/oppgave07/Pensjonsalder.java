@@ -18,6 +18,9 @@ public final class Pensjonsalder {
 
     public static int aarIgjen(int alder) {
         // TODO
-        throw new UnsupportedOperationException("Oppgave 7 — ikke implementert ennå");
-    }
-}
+
+        int arigjen = 67 - alder;
+        if (alder >= 67) {
+            return 0;
+        }  return arigjen;
+    }}

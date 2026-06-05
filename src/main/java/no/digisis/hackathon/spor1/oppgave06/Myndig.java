@@ -16,6 +16,10 @@ public final class Myndig {
 
     public static boolean erMyndig(int alder) {
         // TODO
-        throw new UnsupportedOperationException("Oppgave 6 — ikke implementert ennå");
-    }
+        if (alder >=18){
+        return true;
+        }
+        else{
+        return false;
+}}
 }

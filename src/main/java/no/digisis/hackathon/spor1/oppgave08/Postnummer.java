@@ -17,6 +17,12 @@ public final class Postnummer {
 
     public static boolean erGyldig(String postnummer) {
         // TODO
-        throw new UnsupportedOperationException("Oppgave 8 — ikke implementert ennå");
+
+        if (postnummer.matches("\\d{4}")){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
